@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@nutriot/responsive-ratio": "^0.1.3"
+  }
+}

@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', 'Nunito', sans-serif;
+    background-color: #f0f8ff; 
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+
+header {
+    background-color: #6a5acd; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #836fff; 
+    border-bottom: 4px solid #483d8b;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: 400; 
+}
+
+nav ul li a:hover {
+    background-color: #483d8b; /* Darker slate blue on hover */
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #f08080; /* Light coral */
+}
+
+section {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #483d8b; /* Darker slate blue */
+    font-weight: 600; /* Bolder weight for section headers */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6a5acd;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    background-color: #ffb6c1; 
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact form input, .contact form textarea {
+    padding: 15px;
+    margin-top: 5px;
+    border: 2px solid #836fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f8ff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact form button {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #836fff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact form button:hover {
+    background-color: #483d8b; /* Darker slate blue */
+}
+
+#formResponse {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+#formResponse.success {
+    color: #32cd32; /* Lime green for success */
+}
+
+#formResponse.error {
+    color: #f08080; /* Light coral for error */
+}
