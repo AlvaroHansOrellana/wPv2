@@ -42,16 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
-    }           
+    }
 });
 
+
 document.querySelector("#botonTryMe").addEventListener("click", function () {
-  document.querySelector("#div1").classList.toggle("fondo");
-});
-document.querySelector("#texto").addEventListener("mouseout", function () {
-    document.querySelector("h3").classList.toggle("fondo");
+    document.querySelector("#fotoHans").classList.toggle("show");
   });
-document.querySelector("#texto").addEventListener("mouseover", function () {
-  document.querySelector("h3").classList.toggle("fondo");
-});
+  
 
