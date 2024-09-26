@@ -45,3 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }           
 });
 
+document.querySelector("#botonTryMe").addEventListener("click", function () {
+  document.querySelector("#div1").classList.toggle("fondo");
+});
+document.querySelector("#texto").addEventListener("mouseout", function () {
+    document.querySelector("h3").classList.toggle("fondo");
+  });
+document.querySelector("#texto").addEventListener("mouseover", function () {
+  document.querySelector("h3").classList.toggle("fondo");
+});
+

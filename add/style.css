@@ -1,3 +1,41 @@
+:root {
+    /* Color Palette */
+    --color-light-blue: #f0f8ff;
+    --color-slate-blue: #6a5acd;
+    --color-medium-slate-blue: #836fff;
+    --color-dark-slate-blue: #483d8b;
+    --color-light-pink: #ffb6c1;
+    --color-light-coral: #f08080;
+    --color-lime-green: #32cd32;
+    --color-white: #fff;
+    --color-dark-grey: #333;
+    
+    /* Font Sizes */
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.2rem;
+    --font-size-body: 1rem;
+    --font-size-small-text: 1.2rem;
+
+    /* Font Weights */
+    --font-weight-bold: 600;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+
+    /* Padding and Margins */
+    --padding-large: 40px;
+    --padding-medium: 20px;
+    --padding-small: 10px;
+    
+    /* Border Radius */
+    --border-radius: 10px;
+
+    /* Box Shadow */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Transition */
+    --transition: 0.3s ease-in-out;
+}
+
 body {
     font-family: 'Poppins', 'Nunito', sans-serif;
     background-color: #f0f8ff; 
