@@ -24,34 +24,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const form = document.getElementById("dudasForm");
-  const 
+  // const form = document.getElementById("dudasForm");
+  // const formResponse = document.getElementById("formResponse2");
+  // console.log("formResponse2");
 
 
-//   // Form validation y message display
-//   const form = document.getElementById("contactForm");
-//   const formResponse = document.getElementById("formResponse");
 
-//   form.addEventListener("submit", function (e) {
-//     e.preventDefault(); // Prevent actual form submission
+  // Form validation y message display
+  const form = document.getElementById("contactForm");
+  const formResponse = document.getElementById("formResponse");
 
-//     const email = document.getElementById("email").value;
-//     const message = document.getElementById("message").value;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
 
-//     if (validateEmail(email) && message) {
-//       formResponse.textContent = "Gracias amigi!!!!";
-//       form.reset();
-//     } else {
-//       formResponse.textContent = "Please provide a valid email and message.";
-//       formResponse.style.color = "red";
-//     }
-//   });
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-//   function validateEmail(email) {
-//     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return re.test(String(email).toLowerCase());
-//   }
-// });
+    if (validateEmail(email) && message) {
+      formResponse.textContent = "Gracias amigi!!!!";
+      form.reset();
+      alert('Message sent correctly!');
+    } else {
+      formResponse.textContent = "Please provide a valid email and message.";
+      formResponse.style.color = "red";
+    }
+  });
+
+  function validateEmail(email) {
+    const re = /^(?:[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\])$/;
+    return re.test(String(email).toLowerCase());
+  }
+});
 
 
 // // ROBUST VALIDATE FOR AN EMAIL...
@@ -61,3 +64,4 @@ document.addEventListener("DOMContentLoaded", function () {
 // //   return re.test(String(email).toLowerCase());
 // // }   
 
+// /^[^\s@]+@[^\s@]+\.[^\s@]+$/
