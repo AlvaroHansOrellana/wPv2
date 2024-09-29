@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,26 @@
     <meta name="keywords" content="Portfolio, Junior Programmer, Web Developer, Projects">
     <meta name="author" content="Your Name">
     <title>A. Hans Orellana | Junior Programmer Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@300;400;600&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Nunito:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="/add/style.css">
-    <script src="/script.js"></script>
+    <script src="/2script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="encabezado">
-        <h1 class="titulo1">A. Hans Orellana</h1>
-        <img id="fotoArriba" src="/add/image/glases-monitor.jpg" alt="LandScape"></div>
+            <h1 class="titulo1">A. Hans Orellana</h1>
+            <img id="fotoArriba" src="/add/image/glases-monitor.jpg" alt="LandScape">
+        </div>
         <p>Junior Programmer | Web Developer | <strong>(Not yet)</strong> a Problem Solver</p>
     </header>
-    <button id="botonTryMe">Try me, sexy!&#128512;</button>
-<img id="fotoHans" class="hidden"src="/add/image/A. Hans Orellana.jpg" alt="Image">
+    <div class='container__button-try'>
+        <button id="botonTryMe">Try me, sexy!&#128512;</button>
+        <div class="hora"></div>
+        <img id="fotoHans" class="hidden" src="/add/image/A. Hans Orellana.jpg" alt="Image">
+    </div>
+
     <nav>
         <ul>
             <li><a href="/data/portfolio.html">Portfolio</a></li>
@@ -27,53 +35,72 @@
             <li><a href="/data/contacto.html">Contacto</a></li>
         </ul>
     </nav>
-</ul>
- <div class="elTodoYaSabesQueItsNotGoodEnought">
-    </nav>
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>Hello! I’m <strong>Your Name</strong>, a junior programmer passionate about building web applications and solving real-world problems with code. I am eager to apply my knowledge and skills in HTML, CSS, JavaScript!.</p>
+    </ul>
+    <div class="elTodoYaSabesQueItsNotGoodEnought">
+        </nav>
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m <strong>Hans</strong>, a junior programmer passionate about building web applications and
+                solving real-world problems with code.</p>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        <div class="cuadrado">
+            <section class="projects" id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Portfolio Website</strong>: A personal website to showcase my skills and projects (HTML,
+                        CSS, JavaScript).</li>
+                    <li><strong>Some poorly done Alejandro´s exercices</strong>:(DOM, HTML, CSS, JavaScript).</li>
+                    <li><strong>Half done Fundamentals</strong>:Same same.</li>
+                    <li><strong>Calculator App</strong>: "Wanna do, wannna be" (HTML, CSS, JavaScript).</li>
+                </ul>
+            </section>
+        </div>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formResponse"></p>
+        </section>
+    </div>
+    <section>
+        <div>
+            <h2>Dudas Form</h2>
+            <form id="dudasForm">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Your First Name" required><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Your Last Name" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email..." required><br><br>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Tell us more..." required></textarea>
+                <button type="submit">Send Form!</button>
+            </form>
+            <p id="formResponse"></p>
+        </div>
+
     </section>
 
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>Responsive Design</li>
-        </ul>
-    </section>
-   <div class="cuadrado">
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Portfolio Website</strong>: A personal website to showcase my skills and projects (HTML, CSS, JavaScript).</li>
-            <li><strong>Some poorly done Alejandro´s exercices</strong>:(DOM, HTML, CSS, JavaScript).</li>
-            <li><strong>Half done Fundamentals</strong>:Same same.</li>
-            <li><strong>Calculator App</strong>: "Wanna do, wannna be" (HTML, CSS, JavaScript).</li>
-            <script src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js" type="text/javascript"></script>
-        </ul>
-    </section>
-   </div>
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your email..." required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="formResponse"></p>
-        <script src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js" type="text/javascript"></script>
-    </section>
- </div>
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2024 A. Hans Orellana. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>

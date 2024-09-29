@@ -1,35 +1,49 @@
 body {
     font-family: 'Poppins', 'Nunito', sans-serif;
-    background-color: #f0f8ff; 
+    background-color: #f0f8ff;
     margin: 0;
     padding: 0;
-    color: #333; 
+    color: #333;
 }
 
 #fotoArriba {
-    /*display: flexbox;
+    width: 300px;
+    margin-left: 2rem;
+    display: flex;
     justify-content: center;
-    align-items: center;*/
-    border-radius: 50%;
-    max-height: 20%; 
-    max-width: 20%; 
+    align-items: center;
+    border-radius: 35%;
+    max-height: 20%;
+    max-width: 20%;
     margin: 20px 0px 20px 0px;
+    margin-left: 10px;
 }
+
 .titulo1 {
     align-items: center;
     margin-top: 50px;
 }
-/*.encabezado {
+
+.container__button-try {
+    justify-content: center;
+    display: flex;
+    background-color: #6a5acd;
+
+    button {
+        margin: 10px 0;
+    }
+}
+
+.encabezado {
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 100px;
-}*/
+}
 
-.elTodoYaSabesQueItsNotGoodEnought {
+/* .elTodoYaSabesQueItsNotGoodEnought { 
     display: block;
     float: inherit;
-    }
+} */
 
 .cuadrado {
     align-items: center;
@@ -38,40 +52,46 @@ body {
 
 #botonTryMe {
     align-self: center;
-    background-color: #d56ac4; 
-    color: rgb(255, 255, 255); 
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px; 
+    background-color: #d56ac4;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer; 
-    transition: background-color 0.3s ease, transform 0.2s ease; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 
 #botonTryMe:hover {
     background-color: #eb75eb;
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
 }
 
 
 #botonTryMe:active {
-    transform: scale(0.95); /* Slightly shrink on click */
+    transform: scale(0.95);
+    /* Slightly shrink on click */
 }
 
 
 #fotoHans {
     display: none;
-  }
-  
+}
+
 #fotoHans.show {
     display: block;
+    border-radius: 50%;
     height: 300px;
-  }
-  
+    margin: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
 
 header {
-    background-color: #6a5acd; 
+    background-color: #6a5acd;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -85,7 +105,7 @@ header h1 {
 
 header p {
     font-size: 1.2rem;
-    font-weight: 300; 
+    font-weight: 300;
 }
 
 nav ul {
@@ -94,7 +114,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #836fff; 
+    background-color: #836fff;
     border-bottom: 4px solid #483d8b;
 }
 
@@ -109,15 +129,30 @@ nav ul li a {
     padding: 10px 15px;
     display: block;
     transition: background-color 0.3s ease-in-out;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
+/* .footer__form {     arrastra los valores del padre, no need to give px
+    button {
+        width: 50px;
+        border-radius: 3px;
+    }
+    button::first-child {
+        background-color: red;
+    }
+    button:last-child {
+        background-color: green;
+    }
+} */
+
 nav ul li a:hover {
-    background-color: #483d8b; /* Darker slate blue on hover */
+    background-color: #483d8b;
+    /* Darker slate blue on hover */
 }
 
 nav ul li a.active {
-    border-bottom: 3px solid #f08080; /* Light coral */
+    border-bottom: 3px solid #f08080;
+    /* Light coral */
 }
 
 section {
@@ -133,50 +168,76 @@ section {
 h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
-    color: #483d8b; /* Darker slate blue */
-    font-weight: 600; /* Bolder weight for section headers */
+    color: #483d8b;
+    /* Darker slate blue */
+    font-weight: 600;
+    /* Bolder weight for section headers */
 }
 
 .kaboodle-module {
+    /*publi---------*/
     overflow: hidden;
     margin: 10px auto;
     text-align: center;
-  }
-  
-  a.kaboodle-header {
-     float: right;
-     text-align: right;
-     margin: 0px 0px 10px 0px;
-     padding: 3px 6px 3px 0px;
-     background-color: #333;
-     font-size: 14px;
-     width: 100%;
-     color: white;
-  }
-  
-  
-  .kaboodle-item {
+}
+
+a.kaboodle-header {
+    /*publi----------*/
+    float: right;
+    text-align: right;
+    margin: 0px 0px 10px 0px;
+    padding: 3px 6px 3px 0px;
+    background-color: #333;
+    font-size: 14px;
+    width: 100%;
+    color: white;
+}
+
+
+.kaboodle-item {
+    /*publi------------*/
     display: flex;
     width: 220px;
     overflow: hidden;
     margin: 8px 10px 2px 10px;
     text-align: left;
-  }
-  
-  .kaboodle-item p {
+}
+
+.kaboodle-item p {
+    /*publi-----------------*/
     height: 60px;
     margin-bottom: 0px;
     overflow: hidden;
     font-weight: bold;
     font-size: 14px;
     color: black;
-  }
-  
-  .kaboodle-item:hover {
+}
+
+.kaboodle-item:hover {
+    /*publi*/
     cursor: pointer;
     text-decoration: underline;
-  }
- 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+
+}
 
 footer {
     text-align: center;
@@ -197,7 +258,7 @@ footer p {
 
 .skills ul li {
     display: inline-block;
-    background-color: #ffb6c1; 
+    background-color: #ffb6c1;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
@@ -226,7 +287,8 @@ footer p {
     color: #333;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     padding: 15px;
     margin-top: 5px;
     border: 2px solid #836fff;
@@ -249,7 +311,8 @@ footer p {
 }
 
 .contact form button:hover {
-    background-color: #483d8b; /* Darker slate blue */
+    background-color: #483d8b;
+    /* Darker slate blue */
 }
 
 #formResponse {
@@ -258,9 +321,26 @@ footer p {
 }
 
 #formResponse.success {
-    color: #32cd32; /* Lime green for success */
+    color: #32cd32;
+    /* Lime green for success */
 }
 
 #formResponse.error {
-    color: #f08080; /* Light coral for error */
+    color: #f08080;
+    /* Light coral for error */
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    #fotoHans.show {
+        display: block;
+        height: 50px;
+    }
+
+    nav ul li {
+        margin: 0 0;
+    }
+
+    #botonTryMe {
+        width: 100%;
+    }
 }
