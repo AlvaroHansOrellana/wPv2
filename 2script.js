@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (validateEmail(email) && message) {
       formResponse.textContent = "Gracias amigi!!!!";
       form.reset();
-      alert('Message sent correctly!');
     } else {
       formResponse.textContent = "Please provide a valid email and message.";
       formResponse.style.color = "red";
